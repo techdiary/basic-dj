@@ -1,0 +1,9 @@
+{% if latest_album_list %}
+  <ul>
+    {% for album in latest_album_list %}
+      <li>{{ album.album_name }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p> No albums are available </p>
+{% endif %}

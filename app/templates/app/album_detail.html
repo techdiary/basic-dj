@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{object.title}}</title>
+  </head>
+  <body>
+    {%if object %}
+      <h1>{{ object.artist_name }}</h1>
+        <h2><ul>
+          <li>{{ object.album_name }}</li>
+          <li>{{ object.album_pub_date }}</li>
+        </ul>
+    {% endif %}
+  </body>
+</html>
